@@ -4,17 +4,15 @@
 		<title>siqqel Example File</title>
 
 		<!-- Change the src attribute to reflect the url of your siqqel installation -->
-		<script type="text/javascript" src="http://www.example.com/siqqel/siqqel.js.php"></script>
+		<script type="text/javascript" src="siqqel/siqqel.js.php"></script>
 
 	</head>
 	<body>
 		<div style="margin: 32px; padding: 32px; border-left: dotted 1px #aaa">
 
-		<!-- Very basic query -->
-		<!--                  -->
-		Resultset of query <em>SELECT 'Hello World' AS value</em>:
+		<h2>List of active users</h2>:
 
-		<table sql="SELECT 'Hello World' AS value"></table>
+		<table sql="SELECT * FROM user u WHERE u.active=1"></table>
 
 
 		<p style="margin-bottom: 32px"></p>
